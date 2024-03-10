@@ -16,8 +16,10 @@ class AjaxUsuarios{
 		$item = "id";
 		$valor = $this->idUsuario;
 
+		// Llama al controlador para obtener los datos del usuario por ID
 		$respuesta = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 
+		// Devuelve los datos del usuario en formato JSON
 		echo json_encode($respuesta);
 
 	}
@@ -29,7 +31,6 @@ class AjaxUsuarios{
 	public $activarUsuario;
 	public $activarId;
 
-
 	public function ajaxActivarUsuario(){
 
 		$tabla = "usuarios";
@@ -40,7 +41,10 @@ class AjaxUsuarios{
 		$item2 = "id";
 		$valor2 = $this->activarId;
 
+		// Llama al modelo para activar o desactivar un usuario
 		$respuesta = ModeloUsuarios::mdlActualizarUsuario($tabla, $item1, $valor1, $item2, $valor2);
+
+		// No se envía ninguna salida directa ya que es una operación interna
 
 	}
 
@@ -55,14 +59,15 @@ class AjaxUsuarios{
 		$item = "usuario";
 		$valor = $this->validarUsuario;
 
+		// Llama al controlador para verificar si el usuario ya existe
 		$respuesta = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 
+		// Devuelve el resultado de la verificación en formato JSON
 		echo json_encode($respuesta);
 
 	}
 
-
-/*=============================================
+	/*=============================================
 	VALIDAR NO REPETIR CORREO
 	=============================================*/	
 
@@ -73,8 +78,10 @@ class AjaxUsuarios{
 		$item = "correo";
 		$valor = $this->validarCorreo;
 
+		// Llama al controlador para verificar si el correo ya está registrado
 		$respuesta = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 
+		// Devuelve el resultado de la verificación en formato JSON
 		echo json_encode($respuesta);
 
 	}
@@ -108,7 +115,7 @@ if(isset($_POST["activarUsuario"])){
 VALIDAR NO REPETIR USUARIO
 =============================================*/
 
-if(isset( $_POST["validarUsuario"])){
+if(isset($_POST["validarUsuario"])){
 
 	$valUsuario = new AjaxUsuarios();
 	$valUsuario -> validarUsuario = $_POST["validarUsuario"];
@@ -116,18 +123,14 @@ if(isset( $_POST["validarUsuario"])){
 
 }
 
-
-
 /*=============================================
 VALIDAR NO REPETIR CORREO
 =============================================*/
 
-if(isset( $_POST["validarCorreo"])){
+if(isset($_POST["validarCorreo"])){
 
 	$valUsuario = new AjaxUsuarios();
 	$valUsuario -> validarCorreo = $_POST["validarCorreo"];
 	$valUsuario -> ajaxValidarCorreo();
 
 }
-
-
