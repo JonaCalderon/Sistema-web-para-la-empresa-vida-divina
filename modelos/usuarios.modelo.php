@@ -18,21 +18,25 @@ class ModeloUsuarios {
 
             $stmt->execute();
 
-            return $stmt->fetch();
+            return $stmt->fetch(); // Retorna un solo registro
         } else {
 
             $stmt = Conexion::conectar()->prepare("SELECT * FROM $tabla");
 
             $stmt->execute();
 
-            return $stmt->fetchAll();
+            return $stmt->fetchAll(); // Retorna todos los registros
         }
 
-
+        // Cierre del statement y liberación de recursos
         $stmt->close();
 
         $stmt = null;
     }
+
+    /*=============================================
+    VERIFICAR USUARIO EXISTENTE
+    =============================================*/
 
     static public function verificarUsuarioExistente($tabla, $usuario) {
         $stmt = Conexion::conectar()->prepare("SELECT COUNT(*) as conteo FROM $tabla WHERE usuario = :usuario");
@@ -41,8 +45,12 @@ class ModeloUsuarios {
 
         $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        return $resultado['conteo'] > 0;
+        return $resultado['conteo'] > 0; // Retorna true si el usuario existe, false si no
     }
+
+    /*=============================================
+    VERIFICAR CORREO EXISTENTE
+    =============================================*/
 
     static public function verificarCorreoExistente($tabla, $correo) {
         $stmt = Conexion::conectar()->prepare("SELECT COUNT(*) as conteo FROM $tabla WHERE correo = :correo");
@@ -51,7 +59,7 @@ class ModeloUsuarios {
 
         $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
 
-        return $resultado['conteo'] > 0;
+        return $resultado['conteo'] > 0; // Retorna true si el correo existe, false si no
     }
 
     /*=============================================
@@ -73,12 +81,13 @@ class ModeloUsuarios {
 
         if ($stmt->execute()) {
 
-            return "ok";
+            return "ok"; // Retorna "ok" si se registra correctamente
         } else {
 
-            return "error";
+            return "error"; // Retorna "error" si hay algún error
         }
 
+        // Cierre del statement y liberación de recursos
         $stmt->close();
 
         $stmt = null;
@@ -103,12 +112,13 @@ class ModeloUsuarios {
 
         if ($stmt->execute()) {
 
-            return "ok";
+            return "ok"; // Retorna "ok" si se edita correctamente
         } else {
 
-            return "error";
+            return "error"; // Retorna "error" si hay algún error
         }
 
+        // Cierre del statement y liberación de recursos
         $stmt->close();
 
         $stmt = null;
@@ -127,12 +137,13 @@ class ModeloUsuarios {
 
         if ($stmt->execute()) {
 
-            return "ok";
+            return "ok"; // Retorna "ok" si se actualiza correctamente
         } else {
 
-            return "error";
+            return "error"; // Retorna "error" si hay algún error
         }
 
+        // Cierre del statement y liberación de recursos
         $stmt->close();
 
         $stmt = null;
@@ -150,12 +161,13 @@ class ModeloUsuarios {
 
         if ($stmt->execute()) {
 
-            return "ok";
+            return "ok"; // Retorna "ok" si se borra correctamente
         } else {
 
-            return "error";
+            return "error"; // Retorna "error" si hay algún error
         }
 
+        // Cierre del statement y liberación de recursos
         $stmt->close();
 
         $stmt = null;
@@ -174,11 +186,12 @@ class ModeloUsuarios {
         $stmt->bindParam(":idUsuario", $idUsuario, PDO::PARAM_INT);
 
         if ($stmt->execute()) {
-            return "ok";
+            return "ok"; // Retorna "ok" si se actualiza correctamente
         } else {
-            return "error";
+            return "error"; // Retorna "error" si hay algún error
         }
 
+        // Cierre del statement y liberación de recursos
         $stmt->close();
         $stmt = null;
     }
