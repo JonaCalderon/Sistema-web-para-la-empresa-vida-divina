@@ -12,6 +12,23 @@ class ControladorUsuarios{
 	/**
      * Función para controlar el ingreso de usuarios
      * 
+     * Esta función se encarga de verificar el ingreso de usuarios al sistema.
+     * 
+     * Entradas:
+     *   $_POST["ingUsuario"]: El nombre de usuario ingresado por el usuario.
+     *   $_POST["ingPassword"]: La contraseña ingresada por el usuario.
+     * 
+     * Salidas:
+     *   $_SESSION["iniciarSesion"]: Estado de la sesión iniciada ("ok" si la sesión se inicia correctamente).
+     *   $_SESSION["id"]: ID del usuario que inició sesión.
+     *   $_SESSION["nombre"]: Nombre del usuario que inició sesión.
+     *   $_SESSION["apellidoPa"]: Apellido paterno del usuario que inició sesión.
+     *   $_SESSION["apellidoMa"]: Apellido materno del usuario que inició sesión.
+     *   $_SESSION["correo"]: Correo electrónico del usuario que inició sesión.
+     *   $_SESSION["usuario"]: Nombre de usuario del usuario que inició sesión.
+     *   $_SESSION["foto"]: URL de la foto del usuario que inició sesión.
+     *   $_SESSION["perfil"]: Perfil del usuario que inició sesión.
+     * 
      * @return void
      */
     static public function ctrIngresoUsuario(){
@@ -32,7 +49,7 @@ class ControladorUsuarios{
 
                     if($respuesta["estado"] == 1){
 
-$_SESSION["iniciarSesion"] = "ok";
+						$_SESSION["iniciarSesion"] = "ok";
 						$_SESSION["id"] = $respuesta["id"];
 						$_SESSION["nombre"] = $respuesta["nombre"];
 						$_SESSION["apellidoPa"] = $respuesta["apellidoPa"];
@@ -93,7 +110,26 @@ $_SESSION["iniciarSesion"] = "ok";
 /*=============================================
 	REGISTRO DE USUARIO
 =============================================*/
-
+  /**
+     * Función para crear un nuevo usuario
+     * 
+     * Esta función se encarga de crear un nuevo usuario en el sistema.
+     * 
+     * Entradas:
+     *   $_POST["nuevoUsuario"]: El nombre de usuario para el nuevo usuario.
+     *   $_POST["nuevoCorreo"]: El correo electrónico para el nuevo usuario.
+     *   $_POST["nuevoNombre"]: El nombre del nuevo usuario.
+     *   $_POST["nuevoApellidoPa"]: El apellido paterno del nuevo usuario.
+     *   $_POST["nuevoApellidoMa"]: El apellido materno del nuevo usuario.
+     *   $_POST["nuevoPassword"]: La contraseña para el nuevo usuario.
+     *   $_FILES["nuevaFoto"]["tmp_name"]: La foto subida para el nuevo usuario (opcional).
+     * 
+     * Salidas:
+     *   Muestra mensajes en pantalla mediante JavaScript utilizando la librería SweetAlert.
+     *   Envia un correo electrónico al nuevo usuario con sus credenciales de acceso.
+     * 
+     * @return void
+     */
 static public function ctrCrearUsuario(){
 
     if(isset($_POST["nuevoUsuario"])){
@@ -285,7 +321,22 @@ static private function validarCorreoRepetido($correo){
 	/*=============================================
 	MOSTRAR USUARIO
 	=============================================*/
-
+ /**
+     * Función para mostrar un usuario específico
+     * 
+     * Esta función se encarga de buscar y mostrar un usuario específico del sistema.
+     * 
+     * Entradas:
+     *   $item: El nombre del campo por el cual se buscará al usuario (por ejemplo, "id", "usuario", "correo", etc.).
+     *   $valor: El valor que se utilizará para buscar al usuario en el campo especificado.
+     * 
+     * Salidas:
+     *   $respuesta: Un array con la información del usuario encontrado.
+     * 
+     * @param string $item El nombre del campo por el cual buscar al usuario.
+     * @param mixed $valor El valor que se utilizará para buscar al usuario.
+     * @return array
+     */
 	static public function ctrMostrarUsuarios($item, $valor){
 
 		$tabla = "usuarios";
@@ -298,7 +349,27 @@ static private function validarCorreoRepetido($correo){
 	/*=============================================
 	EDITAR USUARIO
 	=============================================*/
-
+ /**
+     * Función para editar un usuario existente
+     * 
+     * Esta función se encarga de editar los datos de un usuario existente en el sistema.
+     * 
+     * Entradas:
+     *   $_POST["editarUsuario"]: El nombre de usuario del usuario a editar.
+     *   $_POST["editarNombre"]: El nuevo nombre del usuario.
+     *   $_POST["editarApellidopa"]: El nuevo apellido paterno del usuario.
+     *   $_POST["editarApellidoma"]: El nuevo apellido materno del usuario.
+     *   $_POST["editarCorreo"]: El nuevo correo electrónico del usuario.
+     *   $_POST["editarPassword"]: La nueva contraseña del usuario (opcional).
+     *   $_FILES["editarFoto"]["tmp_name"]: La nueva foto del usuario (opcional).
+     *   $_POST["fotoActual"]: La ruta de la foto actual del usuario.
+     *   $_POST["passwordActual"]: La contraseña actual del usuario (para casos donde no se cambia la contraseña).
+     * 
+     * Salidas:
+     *   Muestra mensajes en pantalla mediante JavaScript utilizando la librería SweetAlert.
+     * 
+     * @return void
+     */
 	static public function ctrEditarUsuario(){
 
 		if(isset($_POST["editarUsuario"])){
@@ -482,6 +553,22 @@ static private function validarCorreoRepetido($correo){
 /*=============================================
     CAMBIAR CONTRASEÑA
     =============================================*/
+      /**
+     * Función para cambiar la contraseña de un usuario
+     * 
+     * Esta función se encarga de cambiar la contraseña de un usuario en el sistema.
+     * 
+     * Entradas:
+     *   $_POST["currentPassword"]: La contraseña actual del usuario.
+     *   $_POST["newPassword"]: La nueva contraseña del usuario.
+     *   $_POST["confirmNewPassword"]: La confirmación de la nueva contraseña del usuario.
+     *   $_SESSION["id"]: El ID del usuario que está cambiando la contraseña (supuesto, debe estar en sesión).
+     * 
+     * Salidas:
+     *   Muestra mensajes en pantalla mediante JavaScript utilizando la librería SweetAlert.
+     * 
+     * @return void
+     */
     static public function ctrCambiarContrasena() {
         if (isset($_POST["btnCambiarContrasena"])) {
             $currentPassword = $_POST["currentPassword"];
@@ -577,7 +664,21 @@ static private function validarCorreoRepetido($correo){
 	/*=============================================
 	BORRAR USUARIO
 	=============================================*/
-
+/**
+     * Función para borrar un usuario
+     * 
+     * Esta función se encarga de borrar un usuario del sistema.
+     * 
+     * Entradas:
+     *   $_GET["idUsuario"]: El ID del usuario a borrar.
+     *   $_GET["fotoUsuario"]: La ruta de la foto del usuario a borrar (opcional).
+     *   $_GET["usuario"]: El nombre de usuario del usuario a borrar (opcional).
+     * 
+     * Salidas:
+     *   Muestra mensajes en pantalla mediante JavaScript utilizando la librería SweetAlert.
+     * 
+     * @return void
+     */
 	static public function ctrBorrarUsuario(){
 
 		if(isset($_GET["idUsuario"])){
