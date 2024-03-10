@@ -1,0 +1,184 @@
+0<table border='1' style='border-collapse: collapse; width: 100%;'>
+	<caption><h2>Reporte de Ventas</h2></caption>
+	<tr> 
+		<th style='font-weight:bold; border: 1px solid #000000;'>Código</th> 
+		<th style='font-weight:bold; border: 1px solid #000000;'>Cliente</th>
+		<th style='font-weight:bold; border: 1px solid #000000;'>Vendedor</th>
+		<th style='font-weight:bold; border: 1px solid #000000;'>Cantidad</th>
+		<th style='font-weight:bold; border: 1px solid #000000;'>Productos</th>
+		<th style='font-weight:bold; border: 1px solid #000000;'>Neto</th>		
+		<th style='font-weight:bold; border: 1px solid #000000;'>Total</th>		
+		<th style='font-weight:bold; border: 1px solid #000000;'>Método de Pago</th>	
+		<th style='font-weight:bold; border: 1px solid #000000;'>Fecha</th>		
+	</tr><tr>
+				<td style='border: 1px solid #000000;'>10001</td> 
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'>13<br>1<br></td><td>Cx99<br>Black Tea<br></td>
+				<td style='border: 1px solid #000000;'>$ 27,800.00</td>	
+				<td style='border: 1px solid #000000;'>$ 27,800.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-02-19</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10002</td> 
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'>5<br>2<br></td><td>Cx99<br>Black Tea<br></td>
+				<td style='border: 1px solid #000000;'>$ 13,600.00</td>	
+				<td style='border: 1px solid #000000;'>$ 13,600.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-02-19</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10003</td> 
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'>1<br>3<br></td><td>Cx99<br>Black Tea<br></td>
+				<td style='border: 1px solid #000000;'>$ 7,400.00</td>	
+				<td style='border: 1px solid #000000;'>$ 7,400.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-01-19</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10004</td> 
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'>10<br>10<br></td><td>Cx99<br>Black Tea<br></td>
+				<td style='border: 1px solid #000000;'>$ 38,000.00</td>	
+				<td style='border: 1px solid #000000;'>$ 38,000.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2023-12-19</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10005</td> 
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'>1<br>1<br></td><td>Cx99<br>Black Tea<br></td>
+				<td style='border: 1px solid #000000;'>$ 3,800.00</td>	
+				<td style='border: 1px solid #000000;'>$ 3,800.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2023-11-19</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10006</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'>10<br>30<br></td><td>Cx99<br>Black Tea<br></td>
+				<td style='border: 1px solid #000000;'>$ 74,000.00</td>	
+				<td style='border: 1px solid #000000;'>$ 74,000.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2022-11-19</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10007</td> 
+				<td style='border: 1px solid #000000;'>Jonathan</td>
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'>2<br></td><td>pueba<br></td>
+				<td style='border: 1px solid #000000;'>$ 28.00</td>	
+				<td style='border: 1px solid #000000;'>$ 28.56</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-02-29</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10008</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'></td>
+				<td style='border: 1px solid #000000;'>1<br>4<br>1<br></td><td>gjhghghjgj<br>pueba<br>asdf<br></td>
+				<td style='border: 1px solid #000000;'>$ 1,782.20</td>	
+				<td style='border: 1px solid #000000;'>$ 1,782.20</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-02-29</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10009</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br></td><td>Prueba2<br></td>
+				<td style='border: 1px solid #000000;'>$ 200.00</td>	
+				<td style='border: 1px solid #000000;'>$ 600.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10010</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br></td><td>Prueba2<br></td>
+				<td style='border: 1px solid #000000;'>$ 200.00</td>	
+				<td style='border: 1px solid #000000;'>$ 200.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10011</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br>1<br></td><td>Prueba2<br>Prueba1<br></td>
+				<td style='border: 1px solid #000000;'>$ 356.80</td>	
+				<td style='border: 1px solid #000000;'>$ 356.80</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10012</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br>1<br></td><td>Prueba2<br>Prueba1<br></td>
+				<td style='border: 1px solid #000000;'>$ 356.80</td>	
+				<td style='border: 1px solid #000000;'>$ 356.80</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10013</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br>1<br></td><td>Prueba2<br>Prueba1<br></td>
+				<td style='border: 1px solid #000000;'>$ 356.80</td>	
+				<td style='border: 1px solid #000000;'>$ 356.80</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10014</td> 
+				<td style='border: 1px solid #000000;'>Jonathan</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br></td><td>prueba4<br></td>
+				<td style='border: 1px solid #000000;'>$ 200.00</td>	
+				<td style='border: 1px solid #000000;'>$ 200.00</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10015</td> 
+				<td style='border: 1px solid #000000;'>Jonathan</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br>1<br>1<br></td><td>Prueba2<br>Prueba1<br>prueba4<br></td>
+				<td style='border: 1px solid #000000;'>$ 556.80</td>	
+				<td style='border: 1px solid #000000;'>$ 556.80</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10016</td> 
+				<td style='border: 1px solid #000000;'>Jonathan</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br>1<br>1<br></td><td>prueba4<br>Prueba2<br>Prueba1<br></td>
+				<td style='border: 1px solid #000000;'>$ 434.40</td>	
+				<td style='border: 1px solid #000000;'>$ 434.40</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10017</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br>1<br>1<br></td><td>prueba4<br>Prueba2<br>Prueba1<br></td>
+				<td style='border: 1px solid #000000;'>$ 434.40</td>	
+				<td style='border: 1px solid #000000;'>$ 434.40</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10018</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br>1<br></td><td>gjhghghjgjasdas<br>Prueba1<br></td>
+				<td style='border: 1px solid #000000;'>$ 1,801.80</td>	
+				<td style='border: 1px solid #000000;'>$ 1,801.80</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr><tr>
+				<td style='border: 1px solid #000000;'>10019</td> 
+				<td style='border: 1px solid #000000;'>Maria Fernanda</td>
+				<td style='border: 1px solid #000000;'>jonathan</td>
+				<td style='border: 1px solid #000000;'>1<br>1<br></td><td>hoal<br>prueba4<br></td>
+				<td style='border: 1px solid #000000;'>$ 331.40</td>	
+				<td style='border: 1px solid #000000;'>$ 331.40</td>
+				<td style='border: 1px solid #000000;'>Efectivo</td>
+				<td style='border: 1px solid #000000;'>2024-03-04</td>		
+			</tr></table>

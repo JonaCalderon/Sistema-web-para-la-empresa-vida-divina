@@ -1,0 +1,19 @@
+0<table border='1' style='border-collapse: collapse; width: 100%;'>
+        <caption><h2>Reporte de Mejores Vendedores</h2></caption>
+        <tr> 
+            <th style='font-weight:bold; border: 1px solid #000000;'>Vendedor</th>
+            <th style='font-weight:bold; border: 1px solid #000000;'>Usuario</th>
+            <th style='font-weight:bold; border: 1px solid #000000;'>Neto Ventas</th>    
+        </tr><tr>
+                    <td style='border: 1px solid #000000;'></td>
+                    <td style='border: 1px solid #000000;'></td>
+                    <td style='border: 1px solid #000000;'>$ 164,600.00</td>       
+                </tr><tr>
+                    <td style='border: 1px solid #000000;'>jonathan</td>
+                    <td style='border: 1px solid #000000;'></td>
+                    <td style='border: 1px solid #000000;'>$ 5,229.20</td>       
+                </tr><tr>
+                    <td style='border: 1px solid #000000;'></td>
+                    <td style='border: 1px solid #000000;'></td>
+                    <td style='border: 1px solid #000000;'>$ 1,810.20</td>       
+                </tr></table>

@@ -1,0 +1,58 @@
+0
+            <table border='1' style='border-collapse: collapse; width: 100%;'>
+                <caption><h2>Reporte de Clientes Nuevos</h2></caption>
+                <tr> 
+                    <th style='font-weight:bold; border:1px solid #000000;'>NOMBRE</th> 
+                    <th style='font-weight:bold; border:1px solid #000000;'>Apellido Pa</th> 
+                    <th style='font-weight:bold; border:1px solid #000000;'>Apellido Ma</th> 
+                    <th style='font-weight:bold; border:1px solid #000000;'>DOCUMENTO</th>
+                    <th style='font-weight:bold; border:1px solid #000000;'>CORREO</th>
+                    <th style='font-weight:bold; border:1px solid #000000;'>TELEFONO</th>
+                    <th style='font-weight:bold; border:1px solid #000000;'>DIRECCION</th>
+                    <th style='font-weight:bold; border:1px solid #000000;'>FECHA DE INGRESO</th>      
+                </tr>
+        
+                <tr>
+                    <td style='border:1px solid #000000;'>Maria Fernanda</td>
+                    <td style='border:1px solid #000000;'>Boyas</td>
+                    <td style='border:1px solid #000000;'>Guzman</td>
+                    <td style='border:1px solid #000000;'>99</td>
+                    <td style='border:1px solid #000000;'>cajo200007@upemor.edu.mx</td>
+                    <td style='border:1px solid #000000;'>(777) 589-6565</td>
+                    <td style='border:1px solid #000000;'>calle pera #13 col bugas</td>
+                    <td style='border:1px solid #000000;'>2024-03-04 10:24:00</td>       
+                </tr>
+            
+                <tr>
+                    <td style='border:1px solid #000000;'>Jonathan</td>
+                    <td style='border:1px solid #000000;'>Hernandez</td>
+                    <td style='border:1px solid #000000;'>Arroyo</td>
+                    <td style='border:1px solid #000000;'>2111</td>
+                    <td style='border:1px solid #000000;'>fernanda_bg@outlook.es</td>
+                    <td style='border:1px solid #000000;'>(123) 123-1231</td>
+                    <td style='border:1px solid #000000;'>calle golondrinas 14</td>
+                    <td style='border:1px solid #000000;'>2024-03-04 08:45:54</td>       
+                </tr>
+            
+                <tr>
+                    <td style='border:1px solid #000000;'>Isabela</td>
+                    <td style='border:1px solid #000000;'>Boyas</td>
+                    <td style='border:1px solid #000000;'>Guzman</td>
+                    <td style='border:1px solid #000000;'>1002</td>
+                    <td style='border:1px solid #000000;'>isabela@gmail.com</td>
+                    <td style='border:1px solid #000000;'>(213) 123-1231</td>
+                    <td style='border:1px solid #000000;'>sdfasdf sadfasdf </td>
+                    <td style='border:1px solid #000000;'>2024-03-07 23:05:58</td>       
+                </tr>
+            
+                <tr>
+                    <td style='border:1px solid #000000;'>sadfsadf</td>
+                    <td style='border:1px solid #000000;'>sdfsadf</td>
+                    <td style='border:1px solid #000000;'>sdfadsf</td>
+                    <td style='border:1px solid #000000;'>12221</td>
+                    <td style='border:1px solid #000000;'>sdfsa@sadf.com</td>
+                    <td style='border:1px solid #000000;'>(213) 123-1231</td>
+                    <td style='border:1px solid #000000;'>asdfsadf sadfasdf </td>
+                    <td style='border:1px solid #000000;'>2024-03-07 23:06:28</td>       
+                </tr>
+            </table>
